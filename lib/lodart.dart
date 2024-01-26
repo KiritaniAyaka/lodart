@@ -6,3 +6,4 @@ export 'src/collections/max.dart';
 export 'src/collections/max_by.dart';
 export 'src/collections/unique.dart';
 export 'src/collections/unique_by.dart';
+export 'src/collections/drop_null.dart';
