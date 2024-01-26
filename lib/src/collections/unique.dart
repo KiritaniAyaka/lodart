@@ -3,7 +3,7 @@ extension Unique<E> on Iterable<E> {
   ///
   /// For an object or class, please override [==] operator and [hashCode].
   ///
-  /// Or consider use [uniqueBy] instead.
+  /// Or consider use [UniqueBy.uniqueBy] instead.
   ///
   /// Example:
   /// ```dart
