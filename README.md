@@ -5,13 +5,13 @@ Lodart is a Dart utility library like lodash.
 The goal of lodart is NOT to implement all methods in lodash because of the difference between Dart and JavaScript.
 Lodart aims to implement utilities to make Dart easier to use and keep similar naming rules to lodash.
 
+## Installation
+
+Run `dart pub add lodart` in your dart project or `flutter pub add lodart` in flutter project.
+
 ## Features
 
 Lodart provides some utilities like lodash includes `List`(`Arrary` in JavaScript) and etc.
-
-## Installation
-
-Run `dart add lodart` in your dart project or `flutter pub add lodart` in flutter project.
 
 ## Usage
 
