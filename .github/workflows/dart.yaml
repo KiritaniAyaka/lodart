@@ -17,4 +17,14 @@ jobs:
       - run: dart pub get
       - run: dart format --output=none --set-exit-if-changed .
       - run: dart analyze
-      - run: dart test
+      - name: Testing and coverage
+        run: dart test --coverage=./coverage
+      - name: Upload coverage result
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./coverage/test/
+          fail_ci_if_error: true
+          flags: unittests
+          name: lodart-unittest
+          verbose: true
