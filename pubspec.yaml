@@ -1,5 +1,5 @@
 name: lodart
-description: Lodart is a Dart utility library like lodash and aims to implement utilities to make Dart easier to use and keep similar naming rules to lodash.
+description: Lodart is a Dart utility library like lodash and aims to implement utilities to make Dart easier to use and keep similar naming styles to lodash.
 version: 0.2.0
 repository: https://github.com/KiritaniAyaka/lodart
 
