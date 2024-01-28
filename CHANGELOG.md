@@ -1,3 +1,15 @@
+## 0.3.0
+
+### BREAKING CHANGES
+
+- If you are using `hide` or `show` to partial import, note that `maxBy` is moved to `Max`
+  and `uniqueBy` is moved to `Unique`.
+
+### Added
+
+- `splice` for mutating list like ESMAScript.
+- Some copying version methods for Dart SDK and `splice`.
+
 ## 0.2.0
 
 ### Added
