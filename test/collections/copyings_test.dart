@@ -43,5 +43,11 @@ void main() {
         expect(result.hashCode, isNot(arr.hashCode));
       });
     });
+    
+    test('List.toReplaced()', () {
+      result = arr.toReplaced(1, 'blackberry');
+      expect(result, ['apple', 'blackberry', 'citrus', 'dewberry', 'emblica']);
+      expect(result.hashCode, isNot(arr.hashCode));
+    });
   });
 }

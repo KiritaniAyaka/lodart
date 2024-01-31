@@ -31,6 +31,15 @@ extension Copying<E> on List<E> {
     return [...this, element];
   }
 
+  /// Returns a new list which specific index element has replaced. The copying
+  /// version of `thisList[index] = element;`
+  List<E> toReplaced(int index, E element) {
+    return [
+      for (final (i, e) in indexed)
+        if (i == index) element else e
+    ];
+  }
+
   /// Returns a new list which elements at some specific index were
   /// deleted/replaced. The copying version of [Splice.splice].
   List<E> toSpliced(int start, int deleteCount,
