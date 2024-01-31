@@ -9,11 +9,14 @@ on:
 jobs:
   Lint-and-Test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        sdk: [stable, 3.0.0]
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
         with:
-          sdk: stable
+          sdk: ${{ matrix.sdk }}
       - run: dart pub get
       - run: dart format --output=none --set-exit-if-changed .
       - run: dart analyze
