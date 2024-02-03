@@ -6,6 +6,7 @@ library;
 
 export 'src/collections/group_by.dart';
 export 'src/collections/max.dart';
+export 'src/collections/min.dart';
 export 'src/collections/unique.dart';
 export 'src/collections/drop_null.dart';
 export 'src/collections/splice.dart';
