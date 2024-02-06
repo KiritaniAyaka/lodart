@@ -49,5 +49,11 @@ void main() {
       expect(result, ['apple', 'blackberry', 'citrus', 'dewberry', 'emblica']);
       expect(result.hashCode, isNot(arr.hashCode));
     });
+
+    test('List.toReplacedWhere()', () {
+      result = arr.toReplacedWhere((e) => e.startsWith('b'), 'blackberry');
+      expect(result, ['apple', 'blackberry', 'citrus', 'dewberry', 'emblica']);
+      expect(result.hashCode, isNot(arr.hashCode));
+    });
   });
 }

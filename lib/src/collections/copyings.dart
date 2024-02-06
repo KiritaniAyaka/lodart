@@ -40,6 +40,15 @@ extension Copying<E> on List<E> {
     ];
   }
 
+  /// Returns a new list the first one element that satisfies the predicate is
+  /// replaced with a new element.
+  List<E> toReplacedWhere(bool Function(E e) test, E element) {
+    return [
+      for (final e in this)
+        if (test(e)) element else e
+    ];
+  }
+
   /// Returns a new list which elements at some specific index were
   /// deleted/replaced. The copying version of [Splice.splice].
   List<E> toSpliced(int start, int deleteCount,
