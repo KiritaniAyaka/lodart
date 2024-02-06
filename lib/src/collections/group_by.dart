@@ -1,5 +1,5 @@
 extension GroupBy<E> on Iterable<E> {
-  /// Group values to a map.
+  /// Returns a map that grouped elements in iterable according specific key.
   ///
   /// This function requires a function to get the key of the element.
   /// All the elements which have the same key will be grouped into a list.
