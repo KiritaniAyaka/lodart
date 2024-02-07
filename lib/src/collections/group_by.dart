@@ -10,7 +10,7 @@ extension GroupBy<E> on Iterable<E> {
   /// final grouped = arr.groupBy((e) => e % 2 == 0 ? 'even' : 'odd');
   /// print(grouped); // {odd: [1, 3, 5], even: [2, 4]}
   /// ```
-  Map<K, List<E>> groupBy<K>(K Function(E) groupFn) {
+  Map<K, List<E>> groupBy<K>(K Function(E e) groupFn) {
     final result = <K, List<E>>{};
     for (E e in this) {
       final k = groupFn(e);

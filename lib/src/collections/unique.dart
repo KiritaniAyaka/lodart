@@ -26,7 +26,7 @@ extension Unique<E> on Iterable<E> {
   /// final arr = [1, 2, 3, 4, 5];
   /// print(arr.uniqueBy((e) => e % 3)); // [1, 2, 3]
   /// ```
-  List<E> uniqueBy<K>(K Function(E) uniqueKeyFn) {
+  List<E> uniqueBy<K>(K Function(E e) uniqueKeyFn) {
     final Set<K> duplicateSet = {};
     final list = toList();
     final List<E> result = [];
