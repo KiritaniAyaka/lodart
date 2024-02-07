@@ -25,17 +25,22 @@ For details, please check [API reference](https://pub.dev/documentation/lodart/l
 
 ### Collection
 
-- `unique`
-- `uniqueBy`
+- `chunk`
+- `dropNull`
+- `groupBy`
 - `max`
 - `maxBy`
-- `groupBy`
-- `dropNull`
+- `min`
+- `minBy`
 - `splice`
+- `toAdded`
 - `toRemoved`
 - `toRemovedAt`
-- `toAdded`
+- `toReplaced`
+- `toReplacedWhere`
 - `toSpliced`
+- `unique`
+- `uniqueBy`
 
 ### Number
 
